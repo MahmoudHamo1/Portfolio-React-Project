@@ -1,0 +1,1 @@
+A website that includes a portfolio of my experience and a page for generating random Arabic proverbs from a database. It also includes a list of countries visited and information about them. It was developed in JavaScript, using React for the front-end development, and Node.js for the back-end development.
