@@ -1,0 +1,25 @@
+// Functional components
+// function App() {
+//   const mystyle = { textAlign: "center", backgroundColor: "red" };
+//   return (
+//     <div style={mystyle}>
+//       <p>Hello React</p>
+//       <p>React World</p>
+//     </div>
+//   );
+// }
+***********************************************************
+import React from "react";
+
+// class components
+class App extends React.Component {
+  render() {
+    const mystyle = { textAlign: "center", backgroundColor: "red" };
+    return (
+      <div style={mystyle}>
+        <p>Hello React</p>
+        <p>React World</p>
+      </div>
+    );
+  }
+}

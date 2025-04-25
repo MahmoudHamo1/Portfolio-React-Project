@@ -1,0 +1,108 @@
+* {
+  list-style: none;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+  max-width: 300px;
+  box-shadow: 0 2px 2px 0 rgb(0, 0, 0, 0.2);
+}
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: teal;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s;
+}
+.card button:hover {
+  opacity: 0.8;
+}
+
+body {
+  text-align: center;
+  font-size: 25px;
+  padding: 2%;
+  font-family: "Harmattan", sans-serif;
+}
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+.btn {
+  background-color: teal;
+  color: white;
+  padding: 12px 30px;
+  text-align: center;
+  font-size: 18px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.3s;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+@media (max-width: 800px) {
+  .column {
+    width: 100%;
+  }
+}
+.title-fade-out {
+  opacity: 0;
+  animation-name: fade-out;
+  animation-duration: 2s;
+}
+.title-fade-in {
+  opacity: 100;
+  animation-name: fade-in;
+  animation-duration: 2s;
+}
+@keyframes fade-out {
+  from {
+    opacity: 100;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}
+.gallery {
+  display: inline-block;
+  margin: 15px;
+  width: 300px;
+}
+.gallery img:hover {
+  filter: brightness(50%);
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+.gallery p {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
